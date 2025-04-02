@@ -12,6 +12,7 @@ class NewPlaceViewController: UITableViewController {
     var currentPlace: Place!
     var imageIsChanged = false
     
+    @IBOutlet var userLocationButton: UIButton!
     
     @IBOutlet var saveButton: UIBarButtonItem!
     
@@ -26,6 +27,9 @@ class NewPlaceViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         
         mapButton.setTitle("", for: .normal)
@@ -83,16 +87,28 @@ class NewPlaceViewController: UITableViewController {
         }
     }
     
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let identifer = segue.identifier, let mapVC = segue.destination as? MapViewController else { return }
+        
+        
+        mapVC.incomeSegueIdentifer = identifer
+        
+        if identifer == "showPlace" {
+            mapVC.place.name = placeName.text!
+            mapVC.place.location = placeLocation.text
+            mapVC.place.type = placeType.text
+            mapVC.place.imageData = placeImage.image?.pngData()
+        }
+    }
+    
+    
     func savePlace() {
     
-        var image: UIImage?
-        
-        if imageIsChanged {
-            image = placeImage.image
-            } else {
-                image = UIImage(named: "imagePlaceholder")
-        }
-        
+        let image = imageIsChanged ? placeImage.image : UIImage(named: "imagePlaceholder")
+   
         let imageData = image?.pngData()
         
         let newPlace = Place(name: placeName.text!,
