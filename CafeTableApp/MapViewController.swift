@@ -27,6 +27,8 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        adressLabel.text = ""
         mapView.delegate = self
         setupMapView()
         checkLocationServices()
@@ -151,6 +153,14 @@ class MapViewController: UIViewController {
         }
     }
     
+    private func getCenterLocation(for mapView: MKMapView) -> CLLocation {
+        let latitude = mapView.centerCoordinate.latitude
+        let longitude = mapView.centerCoordinate.longitude
+        
+        return CLLocation(latitude: latitude, longitude: longitude)
+    }
+    
+    
     
     private func showAlert(title: String, message: String) {
         
@@ -195,8 +205,38 @@ class MapViewController: UIViewController {
         
         
     }
+        
+        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+            let center = getCenterLocation(for: mapView)
+            let geocoder = CLGeocoder()
+            geocoder.reverseGeocodeLocation(center) { (placemarks, error) in
+                
+                if let error = error {
+                    print(error)
+                    return
+                }
+                
+                guard let placemarks = placemarks else { return }
+                let placemark = placemarks.first
+                let streetName = placemark?.thoroughfare
+                let buildNumber = placemark?.subThoroughfare
+                
+                DispatchQueue.main.async {
+                    
+                    if streetName != nil && buildNumber != nil {
+                        self.adressLabel.text = "\(streetName!), \(buildNumber!)"
+                    } else if streetName != nil {
+                        self.adressLabel.text = "\(streetName!)"
+                    } else {
+                        self.adressLabel.text = ""
+                    }
+                }
+                
+            }
+        }
     
 }
+
 
 
 extension MapViewController: CLLocationManagerDelegate {
