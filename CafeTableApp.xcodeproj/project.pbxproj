@@ -10,6 +10,7 @@
 		0A113F3C2D917181004E02E4 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A113F3B2D917181004E02E4 /* PlaceModel.swift */; };
 		0A113F3E2D9290EE004E02E4 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A113F3D2D9290EE004E02E4 /* NewPlaceViewController.swift */; };
 		0A8B4B182D9BE5A4004126D5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B4B172D9BE5A4004126D5 /* MapViewController.swift */; };
+		0AAE6AD22D9E9BD300710F3C /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE6AD12D9E9BD300710F3C /* MapManager.swift */; };
 		0AB7AD742D95520E00DE6DDD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7AD732D95520E00DE6DDD /* StorageManager.swift */; };
 		0AB7AD762D980DB700DE6DDD /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7AD752D980DB700DE6DDD /* RatingControl.swift */; };
 		0ABF855D2D8EB2380017E78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF855C2D8EB2380017E78B /* AppDelegate.swift */; };
@@ -17,8 +18,8 @@
 		0ABF85642D8EB2380017E78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF85622D8EB2380017E78B /* Main.storyboard */; };
 		0ABF85662D8EB2390017E78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF85652D8EB2390017E78B /* Assets.xcassets */; };
 		0ABF85692D8EB2390017E78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF85672D8EB2390017E78B /* LaunchScreen.storyboard */; };
-		0ABF85712D8EBE530017E78B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF85702D8EBE530017E78B /* MainViewController.swift */; };
 		0ABF85772D9165410017E78B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF85762D9165410017E78B /* CustomTableViewCell.swift */; };
+		0AC035932D9FD7E80048D46D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC035922D9FD7E70048D46D /* MainViewController.swift */; };
 		5E2C269B44E850507560A4E7 /* Pods_CafeTableApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219CEE76E78BB8BC54CC4F72 /* Pods_CafeTableApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		0A113F3B2D917181004E02E4 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		0A113F3D2D9290EE004E02E4 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		0A8B4B172D9BE5A4004126D5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0AAE6AD12D9E9BD300710F3C /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		0AB7AD732D95520E00DE6DDD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0AB7AD752D980DB700DE6DDD /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		0ABF85592D8EB2380017E78B /* CafeTableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeTableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,8 +37,8 @@
 		0ABF85652D8EB2390017E78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABF85682D8EB2390017E78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ABF856A2D8EB2390017E78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0ABF85702D8EBE530017E78B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0ABF85762D9165410017E78B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0AC035922D9FD7E70048D46D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		219CEE76E78BB8BC54CC4F72 /* Pods_CafeTableApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeTableApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CBC1E83F34699B109AA8CC /* Pods-CafeTableApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeTableApp.debug.xcconfig"; path = "Target Support Files/Pods-CafeTableApp/Pods-CafeTableApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C6B47E71BA81271FCEF2D2DF /* Pods-CafeTableApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeTableApp.release.xcconfig"; path = "Target Support Files/Pods-CafeTableApp/Pods-CafeTableApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,10 +77,12 @@
 		0ABF855B2D8EB2380017E78B /* CafeTableApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AC0358D2D9FD4840048D46D /* ViewControllers */,
 				0ABF855C2D8EB2380017E78B /* AppDelegate.swift */,
-				0ABF85702D8EBE530017E78B /* MainViewController.swift */,
 				0A113F3D2D9290EE004E02E4 /* NewPlaceViewController.swift */,
 				0A8B4B172D9BE5A4004126D5 /* MapViewController.swift */,
+				0AC035922D9FD7E70048D46D /* MainViewController.swift */,
+				0AAE6AD12D9E9BD300710F3C /* MapManager.swift */,
 				0A113F3B2D917181004E02E4 /* PlaceModel.swift */,
 				0AB7AD732D95520E00DE6DDD /* StorageManager.swift */,
 				0ABF85762D9165410017E78B /* CustomTableViewCell.swift */,
@@ -90,6 +94,13 @@
 				0ABF856A2D8EB2390017E78B /* Info.plist */,
 			);
 			path = CafeTableApp;
+			sourceTree = "<group>";
+		};
+		0AC0358D2D9FD4840048D46D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		278CADE5E96991985AF1C768 /* Frameworks */ = {
@@ -227,15 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABF85712D8EBE530017E78B /* MainViewController.swift in Sources */,
 				0A113F3E2D9290EE004E02E4 /* NewPlaceViewController.swift in Sources */,
 				0ABF855D2D8EB2380017E78B /* AppDelegate.swift in Sources */,
 				0AB7AD742D95520E00DE6DDD /* StorageManager.swift in Sources */,
 				0A8B4B182D9BE5A4004126D5 /* MapViewController.swift in Sources */,
 				0AB7AD762D980DB700DE6DDD /* RatingControl.swift in Sources */,
+				0AAE6AD22D9E9BD300710F3C /* MapManager.swift in Sources */,
 				0A113F3C2D917181004E02E4 /* PlaceModel.swift in Sources */,
 				0ABF85772D9165410017E78B /* CustomTableViewCell.swift in Sources */,
 				0ABF855F2D8EB2380017E78B /* SceneDelegate.swift in Sources */,
+				0AC035932D9FD7E80048D46D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +403,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,7 +433,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
