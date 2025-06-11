@@ -54,15 +54,7 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         setupMapView()
         
-        
-        //        cancelButton.setTitle("", for: .normal)
-        //        cancelButton.setImage(UIImage(named: "camcel"), for: .normal)
-        //        cancelButton.tintColor = .clear
-        //        cancelButton.contentMode = .scaleAspectFit
-        //        cancelButton.imageView?.contentMode = .scaleAspectFit
-        //        cancelButton.contentHorizontalAlignment = .fill
-        //        cancelButton.contentVerticalAlignment = .fill
-        
+      
         
     }
     

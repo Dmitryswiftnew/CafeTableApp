@@ -56,6 +56,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AAC0DAE2D9FE67F001E25A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A8B4B172D9BE5A4004126D5 /* MapViewController.swift */,
+				0AC035922D9FD7E70048D46D /* MainViewController.swift */,
+				0A113F3D2D9290EE004E02E4 /* NewPlaceViewController.swift */,
+				0ABF85762D9165410017E78B /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0AAC0DAF2D9FE6BA001E25A0 /* PlaceModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A113F3B2D917181004E02E4 /* PlaceModel.swift */,
+			);
+			path = PlaceModel;
+			sourceTree = "<group>";
+		};
+		0AAC0DB02D9FE6EF001E25A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE6AD12D9E9BD300710F3C /* MapManager.swift */,
+				0AB7AD732D95520E00DE6DDD /* StorageManager.swift */,
+				0AB7AD752D980DB700DE6DDD /* RatingControl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0AAC0DB12D9FE742001E25A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF855C2D8EB2380017E78B /* AppDelegate.swift */,
+				0ABF85652D8EB2390017E78B /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0AAC0DB22D9FE78A001E25A0 /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF855E2D8EB2380017E78B /* SceneDelegate.swift */,
+				0ABF85622D8EB2380017E78B /* Main.storyboard */,
+				0ABF85672D8EB2390017E78B /* LaunchScreen.storyboard */,
+			);
+			path = IBuilder;
+			sourceTree = "<group>";
+		};
 		0ABF85502D8EB2380017E78B = {
 			isa = PBXGroup;
 			children = (
@@ -77,30 +125,14 @@
 		0ABF855B2D8EB2380017E78B /* CafeTableApp */ = {
 			isa = PBXGroup;
 			children = (
-				0AC0358D2D9FD4840048D46D /* ViewControllers */,
-				0ABF855C2D8EB2380017E78B /* AppDelegate.swift */,
-				0A113F3D2D9290EE004E02E4 /* NewPlaceViewController.swift */,
-				0A8B4B172D9BE5A4004126D5 /* MapViewController.swift */,
-				0AC035922D9FD7E70048D46D /* MainViewController.swift */,
-				0AAE6AD12D9E9BD300710F3C /* MapManager.swift */,
-				0A113F3B2D917181004E02E4 /* PlaceModel.swift */,
-				0AB7AD732D95520E00DE6DDD /* StorageManager.swift */,
-				0ABF85762D9165410017E78B /* CustomTableViewCell.swift */,
-				0AB7AD752D980DB700DE6DDD /* RatingControl.swift */,
-				0ABF855E2D8EB2380017E78B /* SceneDelegate.swift */,
-				0ABF85622D8EB2380017E78B /* Main.storyboard */,
-				0ABF85652D8EB2390017E78B /* Assets.xcassets */,
-				0ABF85672D8EB2390017E78B /* LaunchScreen.storyboard */,
 				0ABF856A2D8EB2390017E78B /* Info.plist */,
+				0AAC0DAE2D9FE67F001E25A0 /* ViewControllers */,
+				0AAC0DB02D9FE6EF001E25A0 /* Helpers */,
+				0AAC0DAF2D9FE6BA001E25A0 /* PlaceModel */,
+				0AAC0DB12D9FE742001E25A0 /* Support Files */,
+				0AAC0DB22D9FE78A001E25A0 /* IBuilder */,
 			);
 			path = CafeTableApp;
-			sourceTree = "<group>";
-		};
-		0AC0358D2D9FD4840048D46D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		278CADE5E96991985AF1C768 /* Frameworks */ = {

@@ -29,7 +29,8 @@ class NewPlaceViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        
+        let name = "Dmitry"
+        let age = 37
         
         
         mapButton.setTitle("", for: .normal)
